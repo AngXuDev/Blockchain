@@ -50,9 +50,9 @@ function App() {
 		<div className="App">
 			<p>Welcome, Please Retrieve Complete Chain First</p>
 			<p>Current User: {user}</p>
-			<p>Balance: {balance} </p>
+			<p>User Coin Balance: {balance} </p>
 			<div>
-				Transactions:
+				User Transactions:
 				{transactions.map((trn, index) => {
 					return (
 						<div className="transaction" key={index}>
@@ -74,7 +74,6 @@ function App() {
 					<input type="submit" value="Submit" />
 				</label>
 			</form>
-			<button>Check Transactions for User</button>
 			<button onClick={getChain}>Retrieve Complete Chain</button>
 			<div className="chain">
 				{chain.map(block => {
