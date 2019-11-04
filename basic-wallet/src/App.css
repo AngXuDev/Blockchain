@@ -1,0 +1,22 @@
+.App {
+	text-align: center;
+}
+
+.chain {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.block {
+	display: flex;
+	flex-direction: column;
+	width: 40%;
+	margin: 2%;
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.block p {
+	margin: 0;
+}
